@@ -10,4 +10,16 @@ public class HomeController {
     public String home() {
         return "home";
     }
+
+    @RequestMapping("/aboutMe")
+    public void aboutMe() {
+    }
+
+    @RequestMapping("/personalCenter")
+    public void personalCenter() {
+    }
+
+    @RequestMapping("/systemConfig")
+    public void systemConfig() {
+    }
 }
