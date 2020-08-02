@@ -1,5 +1,7 @@
 package club.codedemo.springsecurityexpressions.controller;
 
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,6 +11,7 @@ public class AuthAdminController {
 
     @RequestMapping("/test")
     public String test() {
-        return "{\"/foo\":\"/auth/admin-bar\"}";
+        SecurityContext securityContext = SecurityContextHolder.getContext();
+        return securityContext.getAuthentication().getName();
     }
 }
