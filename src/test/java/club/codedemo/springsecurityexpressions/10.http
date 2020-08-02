@@ -1,0 +1,4 @@
+# 使用1234为token访问systemInfo，返回200
+GET http://localhost:8080/systemInfo/1234
+
+###

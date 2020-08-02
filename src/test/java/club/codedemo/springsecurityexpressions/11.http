@@ -1,0 +1,4 @@
+# 使用12345为token访问systemInfo，返回401
+GET http://localhost:8080/systemInfo/12345
+
+###

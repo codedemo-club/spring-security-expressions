@@ -1,0 +1,5 @@
+# 带有登录用户信息，使用12345为token访问systemInfo，返回403
+GET http://localhost:8080/systemInfo/12345
+Authorization: Basic dXNlcjp1c2Vy
+
+###

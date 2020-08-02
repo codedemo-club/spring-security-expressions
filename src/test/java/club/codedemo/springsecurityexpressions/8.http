@@ -1,0 +1,4 @@
+# 匿名用户访问aboutMe，返回200
+GET http://localhost:8080/aboutMe
+
+###

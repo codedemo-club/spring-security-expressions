@@ -1,0 +1,5 @@
+# user访问systemConfig，返回403
+GET http://localhost:8080/systemConfig
+Authorization: Basic dXNlcjp1c2Vy
+
+###
